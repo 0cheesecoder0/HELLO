@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STUFF</title>
+</head>
+<body>
+<div></div>
+<button id="button" class="button" onclick="clicked()" >Click me!</button>
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:rgb(0, 200, 255); left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  .button {
+  background-color: #00ddff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position:absolute; 
+  left:500px;
+  top:20px;
+  }
+</style>
+<script>
+  function clicked() {
+    alert("HI!")
+  }
+</script>
+</body>
+</html>
+
